@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crumble & Co. | مصنع الكوكيز المصغّر 🍪</title>
+  <meta name="description" content="Crumble & Co. — فتات وحب.. حيث يلتقي الدفء بالفخامة. تشكيلة واسعة من الكوكيز الطازج المخبوز يومياً.">
+  <meta name="keywords" content="كوكيز, كرومبل, اليوم العلمي, مصنع كوكيز, كلاسيك, أوريو, نوتيلا">
+  <meta property="og:title" content="Crumble & Co. | مصنع الكوكيز 🍪">
+  <meta property="og:description" content="فتات وحب.. حيث يلتقي الدفء بالفخامة">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+  <link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body>
+
+  <div class="announcement-bar">
+    <div class="announcement-content">
+      <span>✨ <strong class="glow-text">Crumble & Co.</strong> فتات وحب.. حيث يلتقي الدفء بالفخامة ✨</span>
+      <span class="divider">|</span>
+      <span>📞 <a href="tel:0780028321" class="tel-link">0780028321</a></span>
+      <span class="divider">|</span>
+      <span>🍪 اليوم العلمي 2026</span>
+    </div>
+  </div>
+
+  <header class="main-header">
+    <div class="header-container">
+      <div class="logo-area">
+        <span class="logo-icon">🍪</span>
+        <div class="logo-text">
+          <h1>.Crumble & Co</h1>
+          <p>مصنع الكوكيز المصغّر</p>
+        </div>
+      </div>
+      <nav class="main-nav" id="main-nav">
+        <button class="nav-tab active" data-target="store-section"><i class="fa-solid fa-cookie-bite"></i> المتجر</button>
+        <button class="nav-tab" data-target="dashboard-section"><i class="fa-solid fa-chart-line"></i> لوحة التحكم</button>
+      </nav>
+      <div class="header-actions">
+        <button class="cart-trigger" id="cart-trigger-btn">
+          <i class="fa-solid fa-basket-shopping"></i>
+          <span class="cart-count" id="cart-count">0</span>
+          <span class="cart-total-badge" id="cart-total-badge">0.00 د.أ</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="notification-container" id="notification-container"></div>
+
+  <main class="app-container">
+
+    <!-- ================= STORE ================= -->
+    <section id="store-section" class="tab-content active">
+
+      <!-- HERO WITH VIDEO BACKGROUND -->
+      <div class="hero-video-section">
+        <video class="hero-video-bg" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=1200&q=80">
+          <source src="https://assets.mixkit.co/videos/48873/48873-720.mp4" type="video/mp4">
+        </video>
+        <div class="hero-video-overlay"></div>
+        <div class="hero-content">
+          <span class="hero-subtitle">مفهوم المتجر: دفء الريف (Rustic)</span>
+          <h2 class="hero-title">تذوّق السعادة الحقيقية في كل قضمة</h2>
+          <p class="hero-description">نحن في <strong>Crumble & Co.</strong> نعتمد على ديكور ريفي دافئ يدمج بين درجات البني الشوكولاتي والبيج الكريمي بلمسات من الوردي الهادئ.</p>
+          <div class="hero-features">
+            <span class="hero-feature-item"><i class="fa-solid fa-wand-magic-sparkles"></i> زبدة بلجيكية فاخرة</span>
+            <span class="hero-feature-item"><i class="fa-solid fa-fire"></i> خبز طازج يومياً</span>
+            <span class="hero-feature-item"><i class="fa-solid fa-gift"></i> علب مخملية فاخرة</span>
+          </div>
+          <div class="hero-actions">
+            <button class="btn btn-primary" onclick="document.getElementById('happiness-menu').scrollIntoView({behavior:'smooth'})">
+              تصفح القائمة <i class="fa-solid fa-arrow-down-long"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- IDENTITY -->
+      <div class="section-container">
+        <div class="section-title-wrapper">
+          <span class="subtitle">الهوية البصرية</span>
+          <h3 class="section-main-title">سر الفخامة والروح الريفية</h3>
+          <div class="gold-line"></div>
+        </div>
+        <div class="identity-grid">
+          <div class="identity-card">
+            <div class="card-icon"><i class="fa-solid fa-palette"></i></div>
+            <h4>التجربة البصرية</h4>
+            <p>ديكور ريفي دافئ يدمج البني الشوكولاتي والبيج الكريمي مع لمسات الوردي الهادئ ورائحة كوكيز طازجة.</p>
+          </div>
+          <div class="identity-card">
+            <div class="card-icon"><i class="fa-solid fa-box-open"></i></div>
+            <h4>التغليف الفاخر</h4>
+            <p>علب مخملية وردية بلمسات ذهبية فاخرة، صُممت لتكون هدية مثالية.</p>
+          </div>
+          <div class="identity-card">
+            <div class="card-icon"><i class="fa-solid fa-heart"></i></div>
+            <h4>صيغة السعادة</h4>
+            <div class="formula-box">
+              <span class="formula-word">Freshness</span> + <span class="formula-word">Luxury</span> + <span class="formula-word">Happiness</span> + <span class="formula-word">Love</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTS -->
+      <div class="section-container" id="happiness-menu">
+        <div class="section-title-wrapper">
+          <span class="subtitle">قائمة السعادة</span>
+          <h3 class="section-main-title">تشكيلتنا الفاخرة</h3>
+          <p class="section-description">7 أصناف شهية · أسعار تنافسية · طازج يومياً</p>
+          <div class="gold-line"></div>
+        </div>
+
+        <div class="products-grid" id="products-grid-container">
+          <!-- Products rendered by JS -->
+        </div>
+      </div>
+
+      <!-- CUSTOMER REVIEWS -->
+      <div class="section-container reviews-section">
+        <div class="section-title-wrapper">
+          <span class="subtitle">آراء عملائنا</span>
+          <h3 class="section-main-title">ماذا يقولون عنا؟</h3>
+          <div class="gold-line"></div>
+        </div>
+        <div class="reviews-grid" id="reviews-container">
+          <!-- Reviews rendered by JS -->
+        </div>
+      </div>
+
+      <!-- DELIVERY INFO -->
+      <div class="section-container bg-warm-accent delivery-section">
+        <div class="section-title-wrapper">
+          <span class="subtitle">التوصيل</span>
+          <h3 class="section-main-title">خدمة التوصيل إلى منزلك</h3>
+          <div class="gold-line"></div>
+        </div>
+        <div class="delivery-grid">
+          <div class="delivery-card">
+            <div class="delivery-icon"><i class="fa-solid fa-truck-fast"></i></div>
+            <h4>توصيل داخل الحرم الجامعي</h4>
+            <p>توصيل مجاني للطلبات فوق 5 د.أ</p>
+            <span class="delivery-fee">تحت 5 د.أ: 0.50 د.أ</span>
+          </div>
+          <div class="delivery-card">
+            <div class="delivery-icon"><i class="fa-solid fa-building"></i></div>
+            <h4>توصيل خارج الحرم</h4>
+            <p>للمناطق المجاورة (الجامعة - المدينة)</p>
+            <span class="delivery-fee">رسوم التوصيل: 1.50 د.أ</span>
+          </div>
+          <div class="delivery-card">
+            <div class="delivery-icon"><i class="fa-solid fa-shop"></i></div>
+            <h4>استلام من الجناح</h4>
+            <p>يمكنك الاستلام المباشر من جناحنا في اليوم العلمي</p>
+            <span class="delivery-fee">دون رسوم إضافية</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- QR CODE -->
+      <div class="section-container bg-warm-accent">
+        <div class="section-title-wrapper">
+          <span class="subtitle">QR Code</span>
+          <h3 class="section-main-title">امسح واطلب!</h3>
+          <div class="gold-line"></div>
+        </div>
+        <div class="qr-section-content">
+          <div class="qr-code-wrapper">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=file:///C:/Users/abood/AppData/Local/Temp/opencode/index.html" alt="QR Code" class="qr-code-img" loading="lazy">
+          </div>
+          <div class="qr-text">
+            <h4>امسح الرمز لزيارة المتجر</h4>
+            <p>شارك الرمز مع أصدقائك واطلبوا الكوكيز الطازج!</p>
+            <div class="qr-actions">
+              <button class="btn btn-primary" onclick="downloadQR()"><i class="fa-solid fa-download"></i> تحميل QR</button>
+              <button class="btn btn-secondary" onclick="shareSite()"><i class="fa-solid fa-share-nodes"></i> مشاركة</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COMMENTS -->
+      <div class="section-container" id="comments-section">
+        <div class="section-title-wrapper">
+          <span class="subtitle">تواصل معنا</span>
+          <h3 class="section-main-title">اترك تعليقاً</h3>
+          <p class="section-description">شاركنا رأيك بالكوكيز والخدمة</p>
+          <div class="gold-line"></div>
+        </div>
+        <div class="comments-layout">
+          <div class="comment-form-wrapper">
+            <div class="form-group">
+              <label>الاسم:</label>
+              <input type="text" id="comment-name" class="form-control" placeholder="اسمك">
+            </div>
+            <div class="form-group">
+              <label>التعليق:</label>
+              <textarea id="comment-text" class="form-control" rows="3" placeholder="اكتب رأيك هنا..."></textarea>
+            </div>
+            <div class="form-group">
+              <label>التقييم:</label>
+              <div class="star-rating" id="comment-star-rating">
+                <i class="fa-regular fa-star" data-star="1"></i>
+                <i class="fa-regular fa-star" data-star="2"></i>
+                <i class="fa-regular fa-star" data-star="3"></i>
+                <i class="fa-regular fa-star" data-star="4"></i>
+                <i class="fa-regular fa-star" data-star="5"></i>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-full" onclick="addComment()"><i class="fa-solid fa-pen"></i> نشر التعليق</button>
+          </div>
+          <div class="comments-list" id="comments-list">
+            <p class="no-comments">لا توجد تعليقات بعد.. كن أول من يعلق!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- INGREDIENTS -->
+      <div class="section-container">
+        <div class="section-title-wrapper">
+          <span class="subtitle">سر الفخامة</span>
+          <h3 class="section-main-title">مكونات نختارها بعناية</h3>
+          <div class="gold-line"></div>
+        </div>
+        <div class="ingredients-grid">
+          <div class="ingredient-item">
+            <span class="ing-icon">🍒</span>
+            <h4>توت بري مجفف</h4>
+            <p>يضيف لمسة حامضة وقرمشة خفيفة توازن نكهة الشوكولاتة.</p>
+          </div>
+          <div class="ingredient-item">
+            <span class="ing-icon">🍯</span>
+            <h4>كراميل مملح</h4>
+            <p>حشوة سائلة يدوية الصنع توازن الحلاوة بنكهة غنية.</p>
+          </div>
+          <div class="ingredient-item">
+            <span class="ing-icon">🌰</span>
+            <h4>مكسرات محمصة</h4>
+            <p>بندق وجوز محمص بعناية لتعزيز القوام والهشاشة.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ================= DASHBOARD ================= -->
+    <section id="dashboard-section" class="tab-content">
+      <div class="dashboard-wrapper">
+        <aside class="dashboard-sidebar">
+          <div class="sidebar-header">
+            <i class="fa-solid fa-gears"></i>
+            <div><h3>لوحة القيادة</h3><p>إدارة الأقسام التفاعلية</p></div>
+          </div>
+          <nav class="sidebar-nav">
+            <button class="side-tab active" data-sub="dept-admin"><i class="fa-solid fa-building-user"></i> ١. إدارة الأعمال</button>
+            <button class="side-tab" data-sub="dept-tech"><i class="fa-solid fa-laptop-code"></i> ٢. تكنولوجيا الأعمال</button>
+            <button class="side-tab" data-sub="dept-ops"><i class="fa-solid fa-helmet-safety"></i> ٣. العمليات والإنتاج</button>
+            <button class="side-tab" data-sub="dept-logistics"><i class="fa-solid fa-truck-ramp-box"></i> ٤. اللوجستيات والمخزون</button>
+            <button class="side-tab" data-sub="dept-marketing"><i class="fa-solid fa-bullhorn"></i> ٥. التسويق والعملاء</button>
+            <button class="side-tab" data-sub="dept-accounting"><i class="fa-solid fa-calculator"></i> ٦. المحاسبة والأرباح</button>
+          </nav>
+          <div class="sidebar-footer">
+            <p>اليوم العلمي النشط</p>
+            <div class="live-status">
+              <span class="status-dot green animate-pulse"></span>
+              <span>خطوط الإنتاج متصلة</span>
+            </div>
+          </div>
+        </aside>
+        <div class="dashboard-panels-container">
+          <!-- DEPT 1: ADMIN -->
+          <div id="dept-admin" class="sub-tab-content active">
+            <div class="panel-header">
+              <h3><i class="fa-solid fa-building-user"></i> إدارة الأعمال والتخطيط الاستراتيجي</h3>
+              <p>الهيكل الإداري، تحليل SWOT، نقطة التعادل.</p>
+            </div>
+            <div class="dashboard-card">
+              <h4 class="card-title"><i class="fa-solid fa-sitemap"></i> الهيكل الإداري</h4>
+              <p class="card-subtitle">اضغط على أي مسمى وظيفي.</p>
+              <div class="org-chart-container">
+                <div class="org-level level-1">
+                  <div class="org-node leader" onclick="showOrgDetails('ceo')"><strong>المدير العام</strong><span>المشرف العام</span></div>
+                </div>
+                <div class="org-connector"></div>
+                <div class="org-level level-2">
+                  <div class="org-node" onclick="showOrgDetails('ops')"><strong>مدير العمليات</strong><span>خطوط الإنتاج</span></div>
+                  <div class="org-node" onclick="showOrgDetails('sales')"><strong>مدير التسويق</strong><span>الترويج والمبيعات</span></div>
+                  <div class="org-node" onclick="showOrgDetails('finance')"><strong>مدير المالية</strong><span>التدفقات النقدية</span></div>
+                  <div class="org-node" onclick="showOrgDetails('it')"><strong>مدير تكنولوجيا</strong><span>المنصات الإلكترونية</span></div>
+                </div>
+                <div class="org-connector"></div>
+                <div class="org-level level-3">
+                  <div class="org-node sub" onclick="showOrgDetails('prod_sup')"><strong>مشرف الإنتاج</strong></div>
+                  <div class="org-node sub" onclick="showOrgDetails('log_sup')"><strong>مشرف اللوجستيات</strong></div>
+                  <div class="org-node sub" onclick="showOrgDetails('cs_sup')"><strong>مشرف خدمة العملاء</strong></div>
+                  <div class="org-node sub" onclick="showOrgDetails('qa_lead')"><strong>رئيس الجودة</strong></div>
+                  <div class="org-node sub" onclick="showOrgDetails('hr_lead')"><strong>رئيس الموارد</strong></div>
+                </div>
+              </div>
+              <div class="org-details-box info-alert" id="org-details-box"><i class="fa-solid fa-circle-info"></i> انقر على منصب.</div>
+            </div>
+            <div class="grid-2-col">
+              <div class="dashboard-card">
+                <h4 class="card-title"><i class="fa-solid fa-rectangle-list"></i> تحليل SWOT</h4>
+                <div class="swot-grid">
+                  <div class="swot-card strength"><h5><i class="fa-solid fa-circle-check"></i> نقاط القوة (S)</h5><ul><li>هوية بصرية فاخرة.</li><li>مكونات عالية الجودة.</li><li>تطبيق متكامل.</li></ul></div>
+                  <div class="swot-card weakness"><h5><i class="fa-solid fa-triangle-exclamation"></i> نقاط الضعف (W)</h5><ul><li>تكلفة مواد عالية.</li><li>صلاحية قصيرة.</li></ul></div>
+                  <div class="swot-card opportunity"><h5><i class="fa-solid fa-chart-line-up"></i> الفرص (O)</h5><ul><li>طلبات المناسبات.</li><li>شراكات الهدايا.</li></ul></div>
+                  <div class="swot-card threat"><h5><i class="fa-solid fa-circle-xmark"></i> التهديدات (T)</h5><ul><li>منافسة شديدة.</li><li>تذبذب الأسعار.</li></ul></div>
+                </div>
+              </div>
+              <div class="dashboard-card">
+                <h4 class="card-title"><i class="fa-solid fa-chart-pie"></i> حاسبة نقطة التعادل</h4>
+                <div class="calculator-inputs">
+                  <div class="input-slider-group">
+                    <label>تكاليف ثابتة: <span id="val-fixed-costs">40.00</span> د.أ</label>
+                    <input type="range" id="slider-fixed-costs" min="10" max="150" value="40" step="5" oninput="calculateBreakEven()">
+                  </div>
+                  <div class="input-slider-group">
+                    <label>تكلفة القطعة: <span id="val-var-cost">0.45</span> د.أ</label>
+                    <input type="range" id="slider-var-cost" min="0.20" max="0.90" value="0.45" step="0.05" oninput="calculateBreakEven()">
+                  </div>
+                  <div class="input-slider-group">
+                    <label>سعر البيع: <span id="val-sell-price">1.25</span> د.أ</label>
+                    <input type="range" id="slider-sell-price" min="0.90" max="2.50" value="1.25" step="0.05" oninput="calculateBreakEven()">
+                  </div>
+                </div>
+                <div class="calc-results-box">
+                  <div class="result-metric"><span class="metric-num" id="calc-be-qty">50</span><span class="metric-label">قطعة للتعادل</span></div>
+                  <div class="result-metric"><span class="metric-num" id="calc-be-sales">62.50</span><span class="metric-label">مبيعات التعادل</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DEPT 2: TECH -->
+          <div id="dept-tech" class="sub-tab-content">
+            <div class="panel-header">
+              <h3><i class="fa-solid fa-laptop-code"></i> تكنولوجيا الأعمال</h3>
+              <p>مراقبة البنية التحتية والتحليلات.</p>
+            </div>
+            <div class="stats-grid">
+              <div class="stat-card"><div class="stat-icon blue"><i class="fa-solid fa-users"></i></div><div class="stat-details"><h4 id="tech-active-users">14</h4><p>عملاء نشطين</p></div></div>
+              <div class="stat-card"><div class="stat-icon green"><i class="fa-solid fa-cash-register"></i></div><div class="stat-details"><h4 id="tech-conversion-rate">8.7%</h4><p>معدل التحويل</p></div></div>
+              <div class="stat-card"><div class="stat-icon purple"><i class="fa-solid fa-network-wired"></i></div><div class="stat-details"><h4>99.98%</h4><p>جاهزية الاستضافة</p></div></div>
+              <div class="stat-card"><div class="stat-icon gold"><i class="fa-solid fa-shield-halved"></i></div><div class="stat-details"><h4>SSL نشط</h4><p>تأمين مشفر</p></div></div>
+            </div>
+            <div class="grid-2-col">
+              <div class="dashboard-card">
+                <h4 class="card-title"><i class="fa-solid fa-bell"></i> محاكي الإشعارات</h4>
+                <div class="form-group"><label for="push-title">عنوان:</label><input type="text" id="push-title" class="form-control" placeholder="عرض جديد! 🍪"></div>
+                <div class="form-group"><label for="push-message">الرسالة:</label><textarea id="push-message" class="form-control" rows="2" placeholder="وصلت دفعة جديدة..."></textarea></div>
+                <button class="btn btn-primary" onclick="sendMockPushNotification()"><i class="fa-solid fa-paper-plane"></i> إرسال</button>
+              </div>
+              <div class="dashboard-card">
+                <h4 class="card-title"><i class="fa-solid fa-database"></i> سجل قاعدة البيانات</h4>
+                <div class="db-terminal-log">
+                  <div class="log-line header-log">[SYSTEM READY] Cloud connected.</div>
+                  <div class="log-line info-log">[INFO] Backup completed. 0.12 MB.</div>
+                  <div id="db-dynamic-logs"><div class="log-line success-log">[SUCCESS] DB orders — transaction created.</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DEPT 3: OPS -->
+          <div id="dept-ops" class="sub-tab-content">
+            <div class="panel-header">
+              <h3><i class="fa-solid fa-helmet-safety"></i> العمليات والإنتاج</h3>
+              <p>التخطيط التشغيلي ومحاكاة الخبز.</p>
+            </div>
+            <div class="dashboard-card bg-highlight-card">
+              <h4 class="card-title"><i class="fa-solid fa-clock"></i> جدولة ساعات التشغيل</h4>
+              <div class="hours-config-grid">
+                <div class="hours-slider-area">
+                  <label><strong>الساعات المجدولة:</strong> <span class="badge-hours" id="display-op-hours">6</span> ساعات</label>
+                  <input type="range" id="slider-operating-hours" class="slider-full" min="1" max="12" value="6" oninput="updateOperatingHoursCalculations()">
+                </div>
+                <div class="hours-stats-box">
+                  <div class="hour-sub-stat"><span>معدل الإنتاج:</span><strong>15 قطعة/ساعة</strong></div>
+                  <div class="hour-sub-stat"><span>الطاقة: </span><strong id="target-total-capacity">90 قطعة</strong></div>
+                  <div class="hour-sub-stat"><span>المخبوز فعلياً:</span><strong id="actual-total-baked" class="color-success">135 قطعة</strong></div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-2-col">
+              <div class="dashboard-card">
+                <h4 class="card-title"><i class="fa-solid fa-arrows-spin"></i> مخطط تدفق العمليات</h4>
+                <div class="process-flow-vertical">
+                  <div class="flow-step" onclick="showFlowDetails(1)"><span class="step-num">١</span><div class="step-txt"><h5>التجهيز</h5><p>فحص ووزن المواد.</p></div></div>
+                  <div class="flow-step" onclick="showFlowDetails(2)"><span class="step-num">٢</span><div class="step-txt"><h5>الخلط</h5><p>دمج المكونات بالترتيب.</p></div></div>
+                  <div class="flow-step" onclick="showFlowDetails(3)"><span class="step-num">٣</span><div class="step-txt"><h5>التشكيل</h5><p>توزيع العجينة لأوزان معيارية.</p></div></div>
+                  <div class="flow-step" onclick="showFlowDetails(4)"><span class="step-num">٤</span><div class="step-txt"><h5>الخبز</h5><p>170° لمدة 10-12 دقيقة.</p></div></div>
+                  <div class="flow-step" onclick="showFlowDetails(5)"><span class="step-num">٥</span><div class="step-txt"><h5>التبريد والجودة</h5><p>فحص المعايير قبل التغليف.</p></div></div>
+                </div>
+                <div class="flow-details-box" id="flow-details-box"><i class="fa-solid fa-circle-question"></i> انقر على مرحلة.</div>
+              </div>
+              <div class="dashboard-card">
+                <h4 class="card-title"><i class="fa-solid fa-fire-burner"></i> محاكي الفرن الذكي</h4>
+                <div class="oven-interface">
+                  <div class="form-row">
+                    <div class="form-group-half">
+                      <label>نوع الكوكيز:</label>
+                      <select id="oven-product-select" class="form-control"></select>
+                    </div>
+                    <div class="form-group-half">
+                      <label>الحرارة:</label>
+                      <input type="number" id="oven-temp" class="form-control" value="170" min="150" max="220">
+                    </div>
+                  </div>
+                  <div class="oven-graphic-container">
+                    <div class="oven-window">
+                      <div class="oven-glow" id="oven-glow-element"></div>
+                      <div class="cookies-inside"><span class="raw-cookie">🍪</span><span class="raw-cookie">🍪</span><span class="raw-cookie">🍪</span></div>
+                    </div>
+                    <div class="oven-controls-panel">
+                      <div class="oven-timer-display" id="oven-timer">READY</div>
+                      <button class="btn btn-oven-start" id="btn-start-bake" onclick="startBakeSimulation()"><i class="fa-solid fa-fire"></i> ابدأ الخبز</button>
+                    </div>
+                  </div>
+                  <div class="oven-alert-log" id="oven-log">🟢 نظام الأفران جاهز.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DEPT 4: LOGISTICS -->
+          <div id="dept-logistics" class="sub-tab-content">
+            <div class="panel-header">
+              <h3><i class="fa-solid fa-truck-ramp-box"></i> اللوجستيات والمخزون</h3>
+              <p>تتبع المخزون والمواد الخام.</p>
+            </div>
+            <div class="info-alert"><i class="fa-solid fa-arrows-spin"></i> المخزون مرتبط بالمتجر تلقائياً.</div>
+            <div class="grid-2-col">
+              <div class="dashboard-card">
+                <h4 class="card-title"><i class="fa-solid fa-boxes-stacked"></i> مستودع الجرد</h4>
+                <div class="inventory-tables-container">
+                  <h5>📦 المنتجات النهائية</h5>
+                  <table class="inventory-table" id="inventory-table-finished">
+                    <thead><tr><th>المنتج</th><th>المخزون</th><th>الحالة</th><th>تعديل</th></tr></thead>
+                    <tbody id="inventory-products-body"></tbody>
+                  </table>
+                  <h5>🌾 المواد الخام</h5>
+                  <table class="inventory-table">
+                    <thead><tr><th>المادة</th><th>الكمية</th><th>الحالة</th><th>تموين</th></tr></thead>
+                    <tbody>
+                      <tr><td>زبدة بلجيكية</td><td id="raw-butter">12.4 كغم</td><td><span class="status-pill green">آمن</span></td><td><button class="btn btn-sm-action" onclick="refillRawMaterial('butter')">+5 كغم</button></td></tr>
+                      <tr><td>شوكولاتة بلجيكية</td><td id="raw-choco">8.8 كغم</td><td><span class="status-pill green">آمن</span></td><td><button class="btn btn-sm-action" onclick="refillRawMaterial('choco')">+5 كغم</button></td></tr>
+                      <tr><td>زبدة اللوتس</td><td id="raw-lotus">3.2 كغم</td><td><span class="status-pill yellow">منخفض</span></td><td><button class="btn btn-sm-action" onclick="refillRawMaterial('lotus')">+3 كغم</button></td></tr>
+                      <tr><td>توت بري مجفف</td><td id="raw-cranberry">2.1 كغم</td><td><span class="status-pill yellow">منخفض</span></td><td><button class="btn btn-sm-action" onclick="refillRawMaterial('cranberry')">+2 كغم</button></td></tr>
+                      <tr><td>طحين فاخر</td><td id="raw-flour">24.5 كغم</td><td><span class="status-pill green">آمن</span></td><td><button class="btn btn-sm-action" onclick="refillRawMaterial('flour')">+10 كغم</button></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="dashboard-card">
+                <h4 class="card-title"><i class="fa-solid fa-tags"></i> مولد بطاقات التغليف</h4>
+                <div class="label-generator-form">
+                  <div class="form-group">
+                    <label>المنتج:</label>
+                    <select id="label-product" class="form-control" onchange="generateProductLabel()"></select>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group-half"><label>الوزن:</label><input type="text" id="label-weight" class="form-control" value="250 غرام"></div>
+                    <div class="form-group-half"><label>التاريخ:</label><input type="text" id="label-date" class="form-control" value="2026-05-23"></div>
+                  </div>
+                </div>
+                <div class="label-preview-container">
+                  <div class="premium-tag-sticker">
+                    <div class="sticker-border">
+                      <div class="sticker-header"><h5>.Crumble & Co</h5><span>فتات وحب.. حيث يلتقي الدفء بالفخامة</span></div>
+                      <div class="sticker-body">
+                        <h4 id="sticker-title">كوكيز كلاسيك</h4>
+                        <div class="sticker-details-row">
+                          <span>الوزن: <strong id="sticker-weight">250 غرام</strong></span>
+                          <span>الإنتاج: <strong id="sticker-date">2026-05-23</strong></span>
+                        </div>
+                        <p class="sticker-ingredients"><strong>المكونات:</strong> <span id="sticker-ingredients-text">زبدة، دقيق، سكر، شوكولاتة</span></p>
+                      </div>
+                      <div class="sticker-footer">
+                        <div class="sticker-qr">
+                          <svg viewBox="0 0 100 100" width="40" height="40" fill="#2C1A11">
+                            <rect x="0" y="0" width="20" height="20"/><rect x="80" y="0" width="20" height="20"/>
+                            <rect x="0" y="80" width="20" height="20"/><rect x="30" y="30" width="40" height="40"/>
+                            <rect x="10" y="40" width="10" height="10"/><rect x="80" y="50" width="10" height="10"/>
+                            <rect x="50" y="80" width="20" height="10"/>
+                          </svg>
+                        </div>
+                        <div class="sticker-bar-txt">
+                          <span>صنع بحب 🍪</span>
+                          <span class="small-code" id="sticker-code">CODE: CRMBL-000</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn-secondary btn-full" onclick="printStickerLabel()"><i class="fa-solid fa-print"></i> طباعة</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- DEPT 5: MARKETING -->
+          <div id="dept-marketing" class="sub-tab-content">
+            <div class="panel-header">
+              <h3><i class="fa-solid fa-bullhorn"></i> التسويق والعملاء</h3>
+              <p>المزيج التسويقي، ولاء العملاء، المحادثات.</p>
+            </div>
+            <div class="dashboard-card">
+              <h4 class="card-title"><i class="fa-solid fa-chess-queen"></i> المزيج التسويقي 4Ps</h4>
+              <div class="marketing-grid">
+                <div class="m-4p-card"><div class="m-header product"><i class="fa-solid fa-cookie"></i> المنتج</div><p>كوكيز ريفية بعلب مخملية فاخرة.</p></div>
+                <div class="m-4p-card"><div class="m-header price"><i class="fa-solid fa-tag"></i> السعر</div><p>صغير 0.50-2.00 د.أ / كبير 5.00-15.00 د.أ</p></div>
+                <div class="m-4p-card"><div class="m-header place"><i class="fa-solid fa-store"></i> المكان</div><p>جناح اليوم العلمي + التطبيق + التوصيل.</p></div>
+                <div class="m-4p-card"><div class="m-header promotion"><i class="fa-solid fa-gift"></i> الترويج</div><p>عينات مجانية، QR codes، نقاط ولاء.</p></div>
+              </div>
+            </div>
+            <div class="grid-2-col">
+              <div class="dashboard-card">
+                <h4 class="card-title"><i class="fa-solid fa-comments"></i> محاكي خدمة العملاء</h4>
+                <div class="chat-simulator-box">
+                  <div class="chat-history" id="chat-messages-container">
+                    <div class="chat-msg system">👋 مرحباً في خدمة عملاء Crumble.</div>
+                    <div class="chat-msg incoming"><strong>أحمد:</strong><p>هل الكوكيز متوفرة الآن؟</p><span class="chat-time">قبل دقيقة</span></div>
+                  </div>
+                  <div class="chat-quick-replies">
+                    <button class="btn btn-reply-preset" onclick="sendChatReply('rose-available')">نعم متوفرة!</button>
+                    <button class="btn btn-reply-preset" onclick="sendChatReply('visa-ok')">ندعم الدفع كاش وفيزا.</button>
+                    <button class="btn btn-reply-preset" onclick="sendChatReply('hot-cookie')">الكوكيز ساخنة الآن!</button>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard-card">
+                <h4 class="card-title"><i class="fa-solid fa-award"></i> برنامج الولاء</h4>
+                <div class="loyalty-calculator">
+                  <div class="form-group">
+                    <label>قيمة المشتريات (د.أ):</label>
+                    <input type="number" id="loyalty-spend" class="form-control" value="15.00" oninput="calculateLoyaltyPoints()">
+                  </div>
+                  <div class="loyalty-points-results">
+                    <div class="loyalty-result-item"><span>النقاط:</span><strong id="loyalty-points">150 نقطة</strong><span class="points-conversion">(كل 1 د.أ = 10 نقاط)</span></div>
+                    <div class="loyalty-result-item"><span>المكافأة:</span><strong class="color-success" id="loyalty-award-title">🎁 حبة مجانية!</strong></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DEPT 6: ACCOUNTING -->
+          <div id="dept-accounting" class="sub-tab-content">
+            <div class="panel-header">
+              <h3><i class="fa-solid fa-calculator"></i> المحاسبة والأرباح</h3>
+              <p>التقارير المالية المباشرة.</p>
+            </div>
+            <div class="financial-cards-row">
+              <div class="fin-card revenue"><div class="fin-icon"><i class="fa-solid fa-sack-dollar"></i></div><div class="fin-data"><span class="fin-label">الإيرادات</span><h4 id="fin-total-revenue">187.50 د.أ</h4></div></div>
+              <div class="fin-card costs"><div class="fin-icon"><i class="fa-solid fa-receipt"></i></div><div class="fin-data"><span class="fin-label">التكاليف</span><h4 id="fin-total-costs">100.75 د.أ</h4></div></div>
+              <div class="fin-card profit"><div class="fin-icon"><i class="fa-solid fa-money-bill-trend-up"></i></div><div class="fin-data"><span class="fin-label">صافي الربح</span><h4 id="fin-net-profit" class="color-success">86.75 د.أ</h4></div></div>
+              <div class="fin-card roi"><div class="fin-icon"><i class="fa-solid fa-percent"></i></div><div class="fin-data"><span class="fin-label">ROI</span><h4 id="fin-roi">86.1%</h4></div></div>
+            </div>
+            <div class="dashboard-card">
+              <h4 class="card-title"><i class="fa-solid fa-file-invoice-dollar"></i> قائمة الدخل (P&L)</h4>
+              <div class="table-responsive">
+                <table class="financial-statement-table">
+                  <thead><tr><th>البند</th><th class="text-left">القيمة</th><th>ملاحظات</th></tr></thead>
+                  <tbody>
+                    <tr class="section-row"><td colspan="3">💰 الإيرادات</td></tr>
+                    <tr><td class="indent-td">مبيعات الكوكيز</td><td class="text-left color-success" id="p-rev-sales">+187.50</td><td>إجمالي المبيعات</td></tr>
+                    <tr class="sub-total-row"><td>الإيرادات (أ)</td><td class="text-left" id="p-rev-total">187.50</td><td>صافي الدفق النقدي</td></tr>
+                    <tr class="section-row"><td colspan="3">💸 التكاليف</td></tr>
+                    <tr><td class="indent-td">ثابتة</td><td class="text-left color-danger" id="p-cost-fixed">-40.00</td><td>بنية تحتية</td></tr>
+                    <tr><td class="indent-td">متغيرة</td><td class="text-left color-danger" id="p-cost-var">-60.75</td><td>0.45 د.أ/قطعة</td></tr>
+                    <tr class="sub-total-row"><td>التكاليف (ب)</td><td class="text-left" id="p-cost-total">100.75</td><td>مجموع النفقات</td></tr>
+                    <tr class="net-profit-row"><td>🚀 صافي الربح</td><td class="text-left highlight-profit" id="p-net-profit">86.75 د.أ</td><td>نسبة الربح: <span id="p-profit-margin">46.3%</span></td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <button class="btn btn-secondary" onclick="resetFinanceSimulator()"><i class="fa-solid fa-rotate-left"></i> إعادة تصفير</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CART SIDEBAR -->
+  <div class="cart-sidebar-overlay" id="cart-sidebar-overlay" onclick="closeCartSidebar()"></div>
+  <aside class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-sidebar-header">
+      <h3><i class="fa-solid fa-basket-shopping"></i> سلة التسوق</h3>
+      <button class="btn-close-cart" onclick="closeCartSidebar()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-items-list" id="cart-items-list">
+      <div class="empty-cart-message"><i class="fa-solid fa-cookie"></i><p>سلتك فارغة</p><span>أضف كوكيز من القائمة!</span></div>
+    </div>
+    <div class="cart-sidebar-footer">
+      <!-- Delivery Address -->
+      <div class="delivery-address-mini" id="delivery-address-mini">
+        <label><i class="fa-solid fa-location-dot"></i> عنوان التوصيل:</label>
+        <input type="text" id="delivery-address-input" class="form-control form-control-sm" placeholder="الجامعة الأردنية - جناح اليوم العلمي" value="الجامعة الأردنية - جناح اليوم العلمي">
+      </div>
+      <div class="cart-total-row">
+        <span>المجموع:</span>
+        <strong id="cart-total-sum">0.00 د.أ</strong>
+      </div>
+      <div class="cart-delivery-fee" id="cart-delivery-fee-display"></div>
+      <p class="cart-tax-info">*أسعار شاملة التغليف الفاخر.</p>
+      <button class="btn btn-primary btn-full" id="btn-goto-checkout" onclick="openCheckoutModal()" disabled>
+        <i class="fa-solid fa-credit-card"></i> إتمام الطلب
+      </button>
+    </div>
+  </aside>
+
+  <!-- CHECKOUT MODAL -->
+  <div class="modal-overlay" id="checkout-modal-overlay">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-shield-halved"></i> إتمام الطلب</h3>
+        <button class="btn-close-modal" onclick="closeCheckoutModal()"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="checkout-modal-grid">
+        <div class="checkout-left">
+          <!-- Delivery Details -->
+          <div class="checkout-section">
+            <h4><i class="fa-solid fa-truck"></i> معلومات التوصيل</h4>
+            <div class="form-group">
+              <label>الاسم الكامل:</label>
+              <input type="text" id="checkout-name" class="form-control" placeholder="أحمد سلامة" required>
+            </div>
+            <div class="form-group">
+              <label>رقم الهاتف:</label>
+              <input type="tel" id="checkout-phone" class="form-control" placeholder="0780028321" required value="0780028321">
+            </div>
+            <div class="form-group">
+              <label>عنوان التوصيل:</label>
+              <input type="text" id="checkout-address" class="form-control" placeholder="الجامعة الأردنية - جناح اليوم العلمي" required value="الجامعة الأردنية - جناح اليوم العلمي">
+            </div>
+            <div class="form-group">
+              <label>طريقة الاستلام:</label>
+              <select id="checkout-delivery-method" class="form-control" onchange="updateDeliveryFee()">
+                <option value="pickup">استلام من الجناح (مجاناً)</option>
+                <option value="campus">توصيل داخل الحرم (0.50 د.أ)</option>
+                <option value="external">توصيل خارج الحرم (1.50 د.أ)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Payment Method -->
+          <div class="checkout-section">
+            <h4><i class="fa-solid fa-credit-card"></i> طريقة الدفع</h4>
+            <div class="payment-options">
+              <label class="payment-option active" id="payment-cash-label" onclick="selectPayment('cash')">
+                <input type="radio" name="payment-method" value="cash" checked>
+                <div class="payment-option-content">
+                  <span class="payment-icon"><i class="fa-solid fa-money-bill-wave"></i></span>
+                  <div>
+                    <strong>الدفع عند الاستلام</strong>
+                    <small>كاش - ادفع عند التوصيل</small>
+                  </div>
+                </div>
+              </label>
+              <label class="payment-option" id="payment-visa-label" onclick="selectPayment('visa')">
+                <input type="radio" name="payment-method" value="visa">
+                <div class="payment-option-content">
+                  <span class="payment-icon"><i class="fa-brands fa-cc-visa"></i></span>
+                  <div>
+                    <strong>بطاقة فيزا</strong>
+                    <small>دفع إلكتروني آمن</small>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="checkout-right">
+          <!-- Visa Card (shown only for visa payment) -->
+          <div id="visa-card-section">
+            <div class="visa-card-3d-wrapper">
+              <div class="visa-card-inner" id="visa-card-element">
+                <div class="visa-card-front">
+                  <div class="card-chip-row">
+                    <div class="card-chip"></div>
+                    <div class="card-brand"><i class="fa-brands fa-cc-visa"></i></div>
+                  </div>
+                  <div class="card-number-display" id="card-num-disp">•••• •••• •••• ••••</div>
+                  <div class="card-details-row">
+                    <div class="card-holder-area">
+                      <span class="card-label">حامل البطاقة</span>
+                      <div class="card-value-display" id="card-name-disp">CRUMBLE CUSTOMER</div>
+                    </div>
+                    <div class="card-expiry-area">
+                      <span class="card-label">الانتهاء</span>
+                      <div class="card-value-display" id="card-expiry-disp">MM/YY</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="visa-card-back">
+                  <div class="card-black-stripe"></div>
+                  <div class="card-cvv-stripe">
+                    <span class="cvv-label">CVV</span>
+                    <div class="cvv-value-display" id="card-cvv-disp">•••</div>
+                  </div>
+                  <div class="card-back-brand"><i class="fa-brands fa-cc-visa"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="visa-form-fields">
+              <div class="form-group">
+                <label>اسم حامل البطاقة:</label>
+                <input type="text" id="card-holder-name" class="form-control" placeholder="Ahmad Salameh" oninput="updateVisaCardGraphics()" onfocus="flipVisaCard(false)">
+              </div>
+              <div class="form-group">
+                <label>رقم البطاقة:</label>
+                <input type="text" id="card-number" class="form-control" placeholder="4000 1234 5678 9010" maxlength="19" oninput="updateVisaCardGraphics()" onfocus="flipVisaCard(false)">
+              </div>
+              <div class="form-row">
+                <div class="form-group-half">
+                  <label>الصلاحية:</label>
+                  <input type="text" id="card-expiry" class="form-control" placeholder="MM/YY" maxlength="5" oninput="updateVisaCardGraphics()" onfocus="flipVisaCard(false)">
+                </div>
+                <div class="form-group-half">
+                  <label>CVV:</label>
+                  <input type="password" id="card-cvv" class="form-control" placeholder="123" maxlength="3" oninput="updateVisaCardGraphics()" onfocus="flipVisaCard(true)" onblur="flipVisaCard(false)">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Order Summary -->
+          <div class="checkout-summary">
+            <h4>ملخص الطلب</h4>
+            <div id="checkout-items-list"></div>
+            <hr>
+            <div class="summary-row"><span>المجموع الفرعي:</span><strong id="checkout-subtotal">0.00 د.أ</strong></div>
+            <div class="summary-row"><span>رسوم التوصيل:</span><strong id="checkout-delivery-fee">0.00 د.أ</strong></div>
+            <div class="summary-row total-row-checkout"><span>الإجمالي:</span><strong id="checkout-total">0.00 د.أ</strong></div>
+            <button class="btn btn-primary btn-full" id="btn-place-order" onclick="placeOrder()">
+              <i class="fa-solid fa-check"></i> تأكيد الطلب
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SUCCESS MODAL -->
+  <div class="modal-overlay" id="success-modal-overlay">
+    <div class="invoice-modal-container">
+      <div class="success-animation-wrapper">
+        <div class="checkmark-circle"><div class="checkmark draw"></div></div>
+        <h3>تم تأكيد الطلب! 🎉</h3>
+        <p>سيتم تجهيز طلبك وتوصيله حسب العنوان المحدد.</p>
+      </div>
+      <div class="printable-invoice" id="printable-invoice-element">
+        <div class="invoice-header">
+          <div class="invoice-logo"><h3>.Crumble & Co</h3><p>فتات وحب.. حيث يلتقي الدفء بالفخامة</p></div>
+          <div class="invoice-meta">
+            <h4>فاتورة</h4>
+            <span>المرجع: <strong id="inv-ref-num">CRMBL-000000</strong></span>
+            <span>التاريخ: <strong id="inv-full-date">2026-05-23</strong></span>
+          </div>
+        </div>
+        <hr>
+        <div class="invoice-client-details">
+          <div><span>الاسم:</span><strong id="inv-client-name">-</strong></div>
+          <div><span>الهاتف:</span><strong id="inv-client-phone">-</strong></div>
+          <div><span>العنوان:</span><strong id="inv-client-address">-</strong></div>
+          <div><span>طريقة الدفع:</span><strong id="inv-payment-method">-</strong></div>
+          <div><span>طريقة التوصيل:</span><strong id="inv-delivery-method">-</strong></div>
+        </div>
+        <table class="invoice-items-table">
+          <thead><tr><th>المنتج</th><th>الحجم</th><th>الكمية</th><th>السعر</th><th>المجموع</th></tr></thead>
+          <tbody id="invoice-items-body"></tbody>
+        </table>
+        <div class="invoice-total-block">
+          <div class="total-row"><span>المجموع النهائي:</span><strong id="inv-total-amount">0.00 د.أ</strong></div>
+          <p>شكراً من Crumble & Co. 📞 0780028321</p>
+        </div>
+      </div>
+      <div class="invoice-modal-footer">
+        <button class="btn btn-secondary" onclick="printInvoice()"><i class="fa-solid fa-print"></i> طباعة</button>
+        <button class="btn btn-primary" onclick="closeSuccessModal()"><i class="fa-solid fa-cookie-bite"></i> العودة للمتجر</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer-bottom">
+    <div class="footer-content">
+      <p>© 2026 <strong>.Crumble & Co</strong> — مشروع اليوم العلمي</p>
+      <p>فتات وحب.. حيث يلتقي الدفء بالفخامة 🍪</p>
+    </div>
+  </footer>
+
+  <script src="app.js?v=4"></script>
+</body>
+</html>
